@@ -12,9 +12,6 @@ const Navbar = () => {
         </div>
 
         <div className="space-x-6">
-          <Link to="/about" className="hover:text-[#d9dcd6]">
-            About
-          </Link>
           {user ? (
             <>
               <Link to="/dashboard" className="hover:text-[#d9dcd6]">

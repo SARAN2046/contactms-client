@@ -68,7 +68,7 @@ const App = () => {
   const [user, setUser] = useState();
   useEffect(() => {
     axios
-      .get("http://localhost:3000/contactms/verify", {
+      .get("https://contactms-api-blue.vercel.app/contactms/verify", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

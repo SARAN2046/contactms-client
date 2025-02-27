@@ -32,7 +32,7 @@ const Register = () => {
     setErrors(errs)
 
     if(!errs.name && !errs.email && !errs.password){
-      axios.post("http://localhost:3000/contactms/register",formData).then(
+      axios.post("https://contactms-api-blue.vercel.app/contactms/register",formData).then(
         (res)=>{
           if(res.data.success || res.status === 201){
             toast.success("Account Created Successfully",{
