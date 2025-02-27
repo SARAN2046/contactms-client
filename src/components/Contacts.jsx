@@ -40,7 +40,7 @@ const Contacts = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`https://contactms-api-blue.vercel.app/contactms/contacts/${id}`, {
+          .delete(`http://localhost:3000/contactms/contacts/${id}`, {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
             },
@@ -100,7 +100,7 @@ const Contacts = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://contactms-api-blue.vercel.app/contactms/contacts", {
+      .get("http://localhost:3000/contactms/contacts", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
