@@ -26,7 +26,7 @@ const Logout = () => {
         navigate("/dashboard");
       }
     });
-  }, [MySwal, navigate, setUser]);
+  }, [ setUser, navigate]);
   return null;
 };
 
