@@ -33,7 +33,7 @@ const Editcontact = () => {
     e.preventDefault();
 
     axios
-      .put("http://localhost:3000/contactms/update-contact/" + id, formData, {
+      .put("https://contactms-api-blue.vercel.app/contactms/update-contact/" + id, formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -55,7 +55,7 @@ const Editcontact = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/contactms/contacts/" + id, {
+      .get("https://contactms-api-blue.vercel.app/contactms/contacts/" + id, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

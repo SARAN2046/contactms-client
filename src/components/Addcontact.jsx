@@ -26,7 +26,7 @@ const Addcontact = () => {
   const handleSubmit= (e)=>{
     e.preventDefault();
 
-      axios.post("http://localhost:3000/contactms/add-contact",formData,{
+      axios.post("https://contactms-client-eta.vercel.app/contactms/add-contact",formData,{
         headers:{
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
